@@ -17,17 +17,17 @@ Pod::Spec.new do |spec|
 
   spec.name         = "YXG_Helper"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of YXG_Helper."
+  spec.summary      = "Common code"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
+  #spec.description  = <<-DESC
+  #                DESC
 
-  spec.homepage     = "http://EXAMPLE/YXG_Helper"
+  spec.homepage     = "https://github.com/jackgitsource/YXG_Helper"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +38,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = "MIT"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -52,7 +52,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "jackgitsource" => "yxguang66@163.com" }
+  spec.author             = { "jackgitsource" => "1360634255@qq.com" }
   # Or just: spec.author    = "jackgitsource"
   # spec.authors            = { "jackgitsource" => "yxguang66@163.com" }
   # spec.social_media_url   = "https://twitter.com/jackgitsource"
@@ -64,7 +64,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+    spec.platform     = :ios, "7.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -79,7 +79,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/YXG_Helper.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/jackgitsource/YXG_Helper", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +90,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "YXG_Helper", "YXG_Helper/**/*.{h,m}"
+  #spec.exclude_files = "YXG_Helper/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
