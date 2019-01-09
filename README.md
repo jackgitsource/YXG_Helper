@@ -1,2 +1,3 @@
 # YXG_Helper
-工具
+
+pod 'YXG_Helper'
