@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/jackgitsource/YXG_Helper", :tag => spec.version.to_s }
 
   #  spec.source_files  = "YXG_Helper", "YXG_Helper/*.{h,m}"
-  spec.source_files  = 'YXG_HelperDev/YXG_Helper/Classes/**/*'
+  spec.source_files  = 'YXG_Helper/Classes/**/*'
 
   #  头文件
   #  spec.public_header_files = 'YXG_Helper/Classes/**/*.h'
