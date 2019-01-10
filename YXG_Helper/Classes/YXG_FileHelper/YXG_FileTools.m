@@ -3,7 +3,6 @@
 //  SPIC-120
 //
 //  Created by  on 2019/1/3.
-//  Copyright © 2019 everfine. All rights reserved.
 //
 
 #import "YXG_FileTools.h"

@@ -3,7 +3,6 @@
 //  YXG_HelperTests
 //
 //  Created by  on 2019/1/10.
-//  Copyright © 2019 everfine. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
