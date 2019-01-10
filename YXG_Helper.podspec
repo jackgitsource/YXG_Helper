@@ -12,7 +12,9 @@ Pod::Spec.new do |spec|
   spec.author             = { "jackgitsource" => "1360634255@qq.com" }
   spec.platform     = :ios, "8.0"
   spec.source       = { :git => "https://github.com/jackgitsource/YXG_Helper", :tag => spec.version.to_s }
-  spec.source_files  = "YXG_Helper", "YXG_Helper/**/*.{h,m}"
+
+  #  spec.source_files  = "YXG_Helper", "YXG_Helper/**/*.{h,m}"
+  spec.source_files  = 'YXG_Helper", "YXG_Helper/**/*'
 
   #  头文件
   #  spec.public_header_files = 'YXG_Helper/Classes/**/*.h'
