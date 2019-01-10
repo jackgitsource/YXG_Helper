@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:YXG_HelperDev.xcodeproj">
+      location = "self:YXG_Helper.xcodeproj">
    </FileRef>
 </Workspace>

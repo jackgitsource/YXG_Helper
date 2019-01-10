@@ -1,6 +1,6 @@
 //
-//  YXG_HelperDevTests.m
-//  YXG_HelperDevTests
+//  YXG_HelperTests.m
+//  YXG_HelperTests
 //
 //  Created by  on 2019/1/10.
 //  Copyright © 2019 everfine. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface YXG_HelperDevTests : XCTestCase
+@interface YXG_HelperTests : XCTestCase
 
 @end
 
-@implementation YXG_HelperDevTests
+@implementation YXG_HelperTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
