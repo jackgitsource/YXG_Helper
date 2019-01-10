@@ -275,7 +275,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = everfine;
+				ORGANIZATIONNAME = sun;
 				TargetAttributes = {
 					70AFE41121E70DD8004B58ED = {
 						CreatedOnToolsVersion = 10.1;
