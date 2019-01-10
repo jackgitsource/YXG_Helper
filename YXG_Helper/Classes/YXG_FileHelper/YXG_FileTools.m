@@ -97,6 +97,28 @@
     });
 }
     
+- (void)saveFileName:(NSString *)fileName data:(NSData *)data callback:(void(^)(NSString *))callback {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSString *path = [YXG_FileTools pathByFileName:fileName path:[YXG_FileTools defultCacheFilePath]];
+        [YXG_FileTools saveToPath:path data:data callback:callback];
+    });
+}
+
++ (void)readFileWIthFileName:(NSString *)fileName callback:(void(^)(NSData *))callback {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSString *filePath = [YXG_FileTools pathByFileName:fileName path:[YXG_FileTools defultCacheFilePath]];
+        [YXG_FileTools readFileWIthPath:filePath callback:callback];
+    });
+}
+
++ (void)readFileWIthPath:(NSString *)path callback:(void(^)(NSData *))callback {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSData *data = [NSData dataWithContentsOfFile:path];
+        if (callback) callback(data);
+    });
+}
+
+    
 + (void)saveImage:(UIImage *)image imageName:(NSString *)imageName callback:(void(^)(NSString *path))callback {
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         // 创建图片路径
@@ -107,9 +129,31 @@
     });
 }
     
++ (void)saveImage:(UIImage *)image filePath:(NSString *)filePath callback:(void(^)(NSString *path))callback {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSData *data = UIImageJPEGRepresentation(image, 0.95);
+        [YXG_FileTools saveToPath:filePath data:data callback:callback];
+    });
+}
+
++ (void)readImageWithImageName:(NSString *)imageName callback:(void(^)(UIImage *))callback {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSString *path = [YXG_FileTools pathByFileName:imageName path:[YXG_FileTools defultCacheFilePath]];
+        [YXG_FileTools readImageWithPath:path callback:callback];
+    });
+}
+
++ (void)readImageWithPath:(NSString *)path callback:(void(^)(UIImage *))callback {
+    [self readFileWIthPath:path callback:^(NSData * data) {
+        UIImage *image = [UIImage imageWithData:data];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if(callback) callback(image);
+        });
+    }];
+}
+    
 + (NSString *)documentPath {
     return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 }
-    
-    @end
+@end
 
