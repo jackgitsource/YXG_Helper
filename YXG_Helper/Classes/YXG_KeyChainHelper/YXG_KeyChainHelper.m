@@ -7,6 +7,7 @@
 //
 
 #import "YXG_KeyChainHelper.h"
+#import <UIKit/UIKit.h>
 
 @implementation YXG_KeyChainHelper
 

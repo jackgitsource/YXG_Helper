@@ -7,9 +7,10 @@
 //
 
 #import "YXG_FileTools.h"
+#import "YXG_Macro.h"
 
 @implementation YXG_FileTools
-
+    
 + (NSString *)pathByDirectoryName:(NSString *)directoryName {
     NSString *basePath = [[self documentPath] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",directoryName]];
     if ([self creatDirectory:basePath]) {
@@ -17,7 +18,7 @@
     }
     return @"";
 }
-
+    
 + (BOOL)creatDirectory:(NSString *)basePath {
     BOOL result = YES;
     BOOL isDirectory = NO;
@@ -34,7 +35,7 @@
     }
     return result;
 }
-
+    
 + (NSString *)pathByFileName:(NSString *)fileName path:(NSString *)path {
     NSString *filePath = [path stringByAppendingPathComponent:fileName];
     BOOL isDirectory = NO;
@@ -51,7 +52,7 @@
     }
     return filePath;
 }
-
+    
 + (void)saveTxtToPath:(NSString *)path string:(NSString *)string callback:(void(^)(NSString *path))callback {
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         @try {
@@ -65,15 +66,50 @@
         }
     });
 }
-
+    
 + (void)saveTxtByFileName:(NSString *)fileName directoryName:(NSString *)directoryName string:(NSString *)string callback:(void(^)(NSString *path))callback {
     NSString *directoryPath = [self pathByDirectoryName:directoryName];
     NSString *filePath = [self pathByFileName:fileName path:directoryPath];
     [self saveTxtToPath:filePath string:string callback:callback];
 }
-
+    
+    
++ (NSString *)defultCacheFilePath {
+    NSString *cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *basePath = [cachePath stringByAppendingPathComponent:YXG_BundleIdentifier];
+    if ([YXG_FileTools creatDirectory:basePath]) {
+        return basePath;
+    }
+    return @"";
+}
+    
++ (void)saveToPath:(NSString *)path data:(NSData *)data callback:(void(^)(NSString *path))callback {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        @try {
+            BOOL result = [data writeToFile:path atomically:YES];
+            if (result) {
+                if (callback) callback(path);
+            }
+        } @catch (NSException *exception) {
+            NSLog(@"文件写入失败");
+        } @finally {
+        }
+    });
+}
+    
++ (void)saveImage:(UIImage *)image imageName:(NSString *)imageName callback:(void(^)(NSString *path))callback {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        // 创建图片路径
+        NSString *path = [YXG_FileTools pathByFileName:imageName path:[YXG_FileTools defultCacheFilePath]];
+        // 图片转换成NSDate存储
+        NSData *data = UIImageJPEGRepresentation(image, 0.95);
+        [YXG_FileTools saveToPath:path data:data callback:callback];
+    });
+}
+    
 + (NSString *)documentPath {
     return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 }
+    
+    @end
 
-@end
