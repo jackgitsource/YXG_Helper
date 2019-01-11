@@ -25,4 +25,16 @@
 #define YXG_ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define YXG_ScreenHeight [UIScreen mainScreen].bounds.size.height
 
+// 类似 http://ip/auth/apply
+// 服务器地址
+#define Http_server @"192.168.10.10"
+// 端口号
+#define Http_port 8080
+// 文件夹
+#define Base_Url @"/auth/"
+// 地址
+#define Host_Name [NSString stringWithFormat:@"http://%@:%d",Http_server,Http_port]
+// auth
+#define BaseAuthUrl [NSString stringWithFormat:@"%@%@",Host_Name,Base_Url]
+
 #endif /* YXG_Macro_h */
