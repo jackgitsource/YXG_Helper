@@ -25,7 +25,7 @@
 #define YXG_ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define YXG_ScreenHeight [UIScreen mainScreen].bounds.size.height
 
-// 类似 http://192.168.10.10/auth/apply,http://192.168.10.10/auth/logout
+// 类似 http: //svoice.qtec.club/auth/apply, http: //svoice.qtec.club/auth/logout
 // 服务器地址
 #define YXG_Http_server @"192.168.10.10"
 // 端口号
