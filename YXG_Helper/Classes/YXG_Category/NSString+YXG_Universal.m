@@ -9,10 +9,10 @@
 
 @implementation NSString (YXG_Universal)
 
-- (NSString *)replaceNull:(NSString *)string {
-    if (!string || string.length == 0) {
+- (NSString *)replaceNull {
+    if (!self || self.length == 0) {
         return @"";
     }
-    return string;
+    return self;
 }
 @end
