@@ -25,16 +25,6 @@
 #define YXG_ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define YXG_ScreenHeight [UIScreen mainScreen].bounds.size.height
 
-// 类似 http: //svoice.qtec.club/auth/apply, http: //svoice.qtec.club/auth/logout
-// 服务器地址
-#define YXG_Http_server @"192.168.10.10"
-// 端口号
-#define YXG_Http_port 8080
-// 文件夹
-#define YXG_Base_Url @"/auth/"
-// 地址
-#define YXG_Host_Name [NSString stringWithFormat:@"http://%@:%d",Http_server,Http_port]
-// auth
-#define YXG_BaseAuthUrl [NSString stringWithFormat:@"%@%@",Host_Name,Base_Url]
+
 
 #endif /* YXG_Macro_h */

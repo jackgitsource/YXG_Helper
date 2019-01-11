@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		700C077921E88DD3009B2F26 /* YXG_RequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 700C077821E88DD3009B2F26 /* YXG_RequestHelper.m */; };
 		706FAC9A21E72C5700B90272 /* YXG_DateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 706FAC9921E72C5700B90272 /* YXG_DateHelper.m */; };
 		70AFE41721E70DD8004B58ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE41621E70DD8004B58ED /* AppDelegate.m */; };
 		70AFE41A21E70DD8004B58ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE41921E70DD8004B58ED /* ViewController.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		700C077721E88DD3009B2F26 /* YXG_RequestHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXG_RequestHelper.h; sourceTree = "<group>"; };
+		700C077821E88DD3009B2F26 /* YXG_RequestHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXG_RequestHelper.m; sourceTree = "<group>"; };
 		706FAC9821E72C5700B90272 /* YXG_DateHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXG_DateHelper.h; sourceTree = "<group>"; };
 		706FAC9921E72C5700B90272 /* YXG_DateHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXG_DateHelper.m; sourceTree = "<group>"; };
 		70AFE41221E70DD8004B58ED /* YXG_Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YXG_Helper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		700C077621E88CD0009B2F26 /* YXG_RequestHelper */ = {
+			isa = PBXGroup;
+			children = (
+				700C077721E88DD3009B2F26 /* YXG_RequestHelper.h */,
+				700C077821E88DD3009B2F26 /* YXG_RequestHelper.m */,
+			);
+			path = YXG_RequestHelper;
+			sourceTree = "<group>";
+		};
 		706FAC9721E72C0000B90272 /* YXG_DateHelper */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +176,7 @@
 		70AFE44721E70DEE004B58ED /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				700C077621E88CD0009B2F26 /* YXG_RequestHelper */,
 				706FAC9721E72C0000B90272 /* YXG_DateHelper */,
 				70AFE44821E70E39004B58ED /* YXG_Category */,
 				70AFE45121E70E39004B58ED /* YXG_FileHelper */,
@@ -344,6 +357,7 @@
 			files = (
 				70AFE45921E70E39004B58ED /* NSObject+YXG_Helper.m in Sources */,
 				70AFE41A21E70DD8004B58ED /* ViewController.m in Sources */,
+				700C077921E88DD3009B2F26 /* YXG_RequestHelper.m in Sources */,
 				70AFE45B21E70E39004B58ED /* YXG_KeyChainHelper.m in Sources */,
 				70AFE42521E70DD9004B58ED /* main.m in Sources */,
 				70AFE45721E70E39004B58ED /* NSString+YXG_Universal.m in Sources */,
