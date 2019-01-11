@@ -27,14 +27,14 @@
 
 // 类似 http://192.168.10.10/auth/apply,http://192.168.10.10/auth/logout
 // 服务器地址
-#define Http_server @"192.168.10.10"
+#define YXG_Http_server @"192.168.10.10"
 // 端口号
-#define Http_port 8080
+#define YXG_Http_port 8080
 // 文件夹
-#define Base_Url @"/auth/"
+#define YXG_Base_Url @"/auth/"
 // 地址
-#define Host_Name [NSString stringWithFormat:@"http://%@:%d",Http_server,Http_port]
+#define YXG_Host_Name [NSString stringWithFormat:@"http://%@:%d",Http_server,Http_port]
 // auth
-#define BaseAuthUrl [NSString stringWithFormat:@"%@%@",Host_Name,Base_Url]
+#define YXG_BaseAuthUrl [NSString stringWithFormat:@"%@%@",Host_Name,Base_Url]
 
 #endif /* YXG_Macro_h */
