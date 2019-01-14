@@ -17,7 +17,12 @@
     }
     return @"";
 }
-    
+
+/**
+ 按照给定文件夹路径创建一个文件夹
+ @param basePath 给定路径
+ @return 创建结果
+ */
 + (BOOL)creatDirectory:(NSString *)basePath {
     BOOL result = YES;
     BOOL isDirectory = NO;
@@ -50,6 +55,14 @@
         }
     }
     return filePath;
+}
+
++ (NSString *)pathByPath:(NSString *)path newFolderName:(NSString *)folderName {
+    NSString *basePath = [path stringByAppendingPathComponent:folderName];
+    if ([self creatDirectory:basePath]) {
+        return basePath;
+    }
+    return @"";
 }
     
 + (void)saveTxtToPath:(NSString *)path string:(NSString *)string callback:(void(^)(NSString *path))callback {
