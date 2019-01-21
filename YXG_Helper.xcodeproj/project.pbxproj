@@ -22,6 +22,8 @@
 		70AFE45921E70E39004B58ED /* NSObject+YXG_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE44E21E70E39004B58ED /* NSObject+YXG_Helper.m */; };
 		70AFE45A21E70E39004B58ED /* YXG_FileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE45321E70E39004B58ED /* YXG_FileTools.m */; };
 		70AFE45B21E70E39004B58ED /* YXG_KeyChainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE45521E70E39004B58ED /* YXG_KeyChainHelper.m */; };
+		70CABA1E21F5E6B6008A5F33 /* SVProgressHUD+yxghelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CABA1D21F5E6B6008A5F33 /* SVProgressHUD+yxghelper.m */; };
+		F623C9279DA9A1128357F7CE /* libPods-YXG_Helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FB47DDDB603957957DF3CD /* libPods-YXG_Helper.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A4A82D0C7A4548B9F9D88C0 /* Pods-YXG_Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXG_Helper.debug.xcconfig"; path = "Target Support Files/Pods-YXG_Helper/Pods-YXG_Helper.debug.xcconfig"; sourceTree = "<group>"; };
 		700C077721E88DD3009B2F26 /* YXG_RequestHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXG_RequestHelper.h; sourceTree = "<group>"; };
 		700C077821E88DD3009B2F26 /* YXG_RequestHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXG_RequestHelper.m; sourceTree = "<group>"; };
 		706FAC9821E72C5700B90272 /* YXG_DateHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXG_DateHelper.h; sourceTree = "<group>"; };
@@ -73,6 +76,10 @@
 		70AFE45321E70E39004B58ED /* YXG_FileTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXG_FileTools.m; sourceTree = "<group>"; };
 		70AFE45521E70E39004B58ED /* YXG_KeyChainHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXG_KeyChainHelper.m; sourceTree = "<group>"; };
 		70AFE45621E70E39004B58ED /* YXG_KeyChainHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXG_KeyChainHelper.h; sourceTree = "<group>"; };
+		70CABA1C21F5E6B6008A5F33 /* SVProgressHUD+yxghelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+yxghelper.h"; sourceTree = "<group>"; };
+		70CABA1D21F5E6B6008A5F33 /* SVProgressHUD+yxghelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+yxghelper.m"; sourceTree = "<group>"; };
+		7ED1C9A203BD61124BA20CCB /* Pods-YXG_Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXG_Helper.release.xcconfig"; path = "Target Support Files/Pods-YXG_Helper/Pods-YXG_Helper.release.xcconfig"; sourceTree = "<group>"; };
+		89FB47DDDB603957957DF3CD /* libPods-YXG_Helper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YXG_Helper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F623C9279DA9A1128357F7CE /* libPods-YXG_Helper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +133,8 @@
 				70AFE42D21E70DD9004B58ED /* YXG_HelperTests */,
 				70AFE43821E70DD9004B58ED /* YXG_HelperUITests */,
 				70AFE41321E70DD8004B58ED /* Products */,
+				A6147A940B7791139F2FAF3B /* Pods */,
+				7AE47CE9383FB21CADF3E116 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +205,8 @@
 				70AFE44B21E70E39004B58ED /* UIAlertController+YXG_UniversalAlert.m */,
 				70AFE44A21E70E39004B58ED /* NSObject+YXG_Helper.h */,
 				70AFE44E21E70E39004B58ED /* NSObject+YXG_Helper.m */,
+				70CABA1C21F5E6B6008A5F33 /* SVProgressHUD+yxghelper.h */,
+				70CABA1D21F5E6B6008A5F33 /* SVProgressHUD+yxghelper.m */,
 			);
 			path = YXG_Category;
 			sourceTree = "<group>";
@@ -225,6 +237,23 @@
 			path = YXG_KeyChainHelper;
 			sourceTree = "<group>";
 		};
+		7AE47CE9383FB21CADF3E116 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89FB47DDDB603957957DF3CD /* libPods-YXG_Helper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6147A940B7791139F2FAF3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A4A82D0C7A4548B9F9D88C0 /* Pods-YXG_Helper.debug.xcconfig */,
+				7ED1C9A203BD61124BA20CCB /* Pods-YXG_Helper.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70AFE43E21E70DD9004B58ED /* Build configuration list for PBXNativeTarget "YXG_Helper" */;
 			buildPhases = (
+				30A2D0799E60E505C4C2F62E /* [CP] Check Pods Manifest.lock */,
 				70AFE40E21E70DD8004B58ED /* Sources */,
 				70AFE40F21E70DD8004B58ED /* Frameworks */,
 				70AFE41021E70DD8004B58ED /* Resources */,
+				A4147FAEF4EC00020B405DA3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -350,12 +381,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30A2D0799E60E505C4C2F62E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YXG_Helper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4147FAEF4EC00020B405DA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YXG_Helper/Pods-YXG_Helper-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YXG_Helper/Pods-YXG_Helper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		70AFE40E21E70DD8004B58ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				70AFE45921E70E39004B58ED /* NSObject+YXG_Helper.m in Sources */,
+				70CABA1E21F5E6B6008A5F33 /* SVProgressHUD+yxghelper.m in Sources */,
 				70AFE41A21E70DD8004B58ED /* ViewController.m in Sources */,
 				700C077921E88DD3009B2F26 /* YXG_RequestHelper.m in Sources */,
 				70AFE45B21E70E39004B58ED /* YXG_KeyChainHelper.m in Sources */,
@@ -533,6 +612,7 @@
 		};
 		70AFE43F21E70DD9004B58ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A4A82D0C7A4548B9F9D88C0 /* Pods-YXG_Helper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +631,7 @@
 		};
 		70AFE44021E70DD9004B58ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ED1C9A203BD61124BA20CCB /* Pods-YXG_Helper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
