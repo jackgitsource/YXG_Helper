@@ -8,20 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-// 类似 http: //svoice.qtec.club/auth/apply, http: //svoice.qtec.club/auth/logout
-// 服务器地址
+// 域名or ipf地址
 #define YXG_Http_server @"192.168.10.10"
-// 端口号
+// 端口号一般不需要加都是默认的
 #define YXG_Http_port 8080
 // 文件夹
 #define YXG_Base_Url @"/auth/"
 // 地址
-#define YXG_Host_Name [NSString stringWithFormat:@"http://%@:%d",Http_server,Http_port]
+#define YXG_Host_Name [NSString stringWithFormat:@"http://%@:%d",Http_server,YXG_Http_port]
 // auth
-#define YXG_BaseAuthUrl [NSString stringWithFormat:@"%@%@",Host_Name,Base_Url]
+#define YXG_BaseAuthUrl [NSString stringWithFormat:@"%@%@",YXG_Host_Name,YXG_Base_Url]
 
 /**
- 请求回调
+ 请求成功回调
  @param dictionary 响应数据
  @param error 错误信息
  */
@@ -48,6 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
  manager.responseSerializer = [AFJSONResponseSerializer serializer];
  manager.requestSerializer = [AFJSONRequestSerializer serializer];
  manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html; charset=utf-8",@"application/json", @"text/json", @"text/javascript",@"text/plain; charset=utf-8",nil];
+ manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", @"text/xml", @"text/plain", nil];
  [manager POST:[NSString stringWithFormat:@"%@%@",BaseAuthUrl,url]
  parameters:baseParameters
  progress:nil
