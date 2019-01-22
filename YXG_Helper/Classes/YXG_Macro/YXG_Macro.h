@@ -8,6 +8,19 @@
 #ifndef YXG_Macro_h
 #define YXG_Macro_h
 
+
+// iOS系统信息
+#define YXG_iOS_VERSION [[UIDevice currentDevice] systemVersion]
+// 判断是否是iphoneX设备
+#define YXG_IS_IPHONE_X \
+({BOOL isPhoneX = NO;\
+if (@available(iOS 11.0, *)) {\
+isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
+}\
+(isPhoneX);})
+// 判断是不是ipad
+#define YXG_IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
 // info.plist 文件信息
 #define YXG_InfoDictionary [[NSBundle mainBundle] infoDictionary]
 // 当前应用程序的 bundle ID
