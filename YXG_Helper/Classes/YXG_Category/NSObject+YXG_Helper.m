@@ -13,7 +13,7 @@
  获取当前的控制器
   @return 当前控制器
  */
-+ (UIViewController *)YXG_CurrentViewController {
++ (UIViewController *)yxg_CurrentViewController {
     UIWindow *window = [[UIApplication sharedApplication] keyWindow];
     if (window.windowLevel != UIWindowLevelNormal) {
         NSArray *windows = [[UIApplication sharedApplication] windows];
@@ -39,7 +39,7 @@
     return window.rootViewController;
 }
 
-+ (UIViewController *)YXG_TopViewController:(UIViewController *)controller {
++ (UIViewController *)yxg_TopViewController:(UIViewController *)controller {
     BOOL isPresenting = NO;
     do {
         UIViewController *presented = [controller presentedViewController];

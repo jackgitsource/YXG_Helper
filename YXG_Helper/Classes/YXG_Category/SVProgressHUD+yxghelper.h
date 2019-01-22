@@ -12,10 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SVProgressHUD (yxghelper)
 
-+ (void)YXG_ShowError:(NSString *)errorString;
-+ (void)YXG_ShowSuccess:(NSString *)successString;
-+ (void)YXG_DismissAndShowError:(NSString *)errorString;
-+ (void)YXG_DismissAndShowSuccess:(NSString *)successString;
++ (void)yxg_ShowError:(NSString *)errorString;
++ (void)yxg_ShowSuccess:(NSString *)successString;
++ (void)yxg_DismissAndShowError:(NSString *)errorString;
++ (void)yxg_DismissAndShowSuccess:(NSString *)successString;
 @end
 
 NS_ASSUME_NONNULL_END

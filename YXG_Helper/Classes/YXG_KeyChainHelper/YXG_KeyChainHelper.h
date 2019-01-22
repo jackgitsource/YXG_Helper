@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param aValue 对应的Value
  @param aKey   对应的Key
  */
-+ (void)YXG_saveKeychainValue:(NSString *)aValue key:(NSString *)aKey;
++ (void)yxg_saveKeychainValue:(NSString *)aValue key:(NSString *)aKey;
 
 
 /**
@@ -25,16 +25,16 @@ NS_ASSUME_NONNULL_BEGIN
  @param aKey 对应的Key
  @return 返回储存的Value
  */
-+ (NSString *)YXG_readValueWithKeychain:(NSString *)aKey;
++ (NSString *)yxg_readValueWithKeychain:(NSString *)aKey;
 
 
 /**
  从🔑钥匙串删除字符串
  @param aKey 对应的Key
  */
-+ (void)YXG_deleteKeychainValue:(NSString *)aKey;
++ (void)yxg_deleteKeychainValue:(NSString *)aKey;
 
-+ (NSString *)YXG_uuid;
++ (NSString *)yxg_uuid;
 
 @end
 

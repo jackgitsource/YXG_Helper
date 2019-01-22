@@ -10,7 +10,7 @@
 
 @implementation YXG_KeyChainHelper
 
-+ (NSMutableDictionary *)YXG_getKeychainQuery:(NSString *)service{
++ (NSMutableDictionary *)yxg_getKeychainQuery:(NSString *)service{
     return [NSMutableDictionary dictionaryWithObjectsAndKeys:
             (__bridge_transfer id)kSecClassGenericPassword,
             (__bridge_transfer id)kSecClass,service,
@@ -21,14 +21,14 @@
             nil];
 }
 
-+ (void)YXG_saveKeychainValue:(NSString *)aValue key:(NSString *)aKey{
++ (void)yxg_saveKeychainValue:(NSString *)aValue key:(NSString *)aKey{
     if (!aKey) {
         return ;
     }
     if(!aValue) {
         aValue = @"";
     }
-    NSMutableDictionary * keychainQuery = [self YXG_getKeychainQuery:aKey];
+    NSMutableDictionary * keychainQuery = [self yxg_getKeychainQuery:aKey];
     SecItemDelete((__bridge_retained CFDictionaryRef)keychainQuery);
     
     [keychainQuery setObject:[NSKeyedArchiver archivedDataWithRootObject:aValue] forKey:(__bridge_transfer id)kSecValueData];
@@ -39,10 +39,10 @@
     }
 }
 
-+ (NSString *)YXG_readValueWithKeychain:(NSString *)aKey
++ (NSString *)yxg_readValueWithKeychain:(NSString *)aKey
 {
     NSString *ret = nil;
-    NSMutableDictionary *keychainQuery = [self YXG_getKeychainQuery:aKey];
+    NSMutableDictionary *keychainQuery = [self yxg_getKeychainQuery:aKey];
     [keychainQuery setObject:(id)kCFBooleanTrue forKey:(__bridge_transfer id)kSecReturnData];
     [keychainQuery setObject:(__bridge_transfer id)kSecMatchLimitOne forKey:(__bridge_transfer id)kSecMatchLimit];
     CFDataRef keyData = NULL;
@@ -59,16 +59,16 @@
     return ret;
 }
 
-+ (void)YXG_deleteKeychainValue:(NSString *)aKey {
-    NSMutableDictionary *keychainQuery = [self YXG_getKeychainQuery:aKey];
++ (void)yxg_deleteKeychainValue:(NSString *)aKey {
+    NSMutableDictionary *keychainQuery = [self yxg_getKeychainQuery:aKey];
     SecItemDelete((__bridge CFDictionaryRef)keychainQuery);
 }
 
-+ (NSString *)YXG_uuid {
-    NSString *deviceId = [YXG_KeyChainHelper YXG_readValueWithKeychain:@"Key_DeviceUUIDString"];
++ (NSString *)yxg_uuid {
+    NSString *deviceId = [YXG_KeyChainHelper yxg_readValueWithKeychain:@"Key_DeviceUUIDString"];
     if (!deviceId || !deviceId.length) {
         deviceId = [[UIDevice currentDevice].identifierForVendor UUIDString];
-        [YXG_KeyChainHelper YXG_saveKeychainValue:deviceId key:@"Key_DeviceUUIDString"];
+        [YXG_KeyChainHelper yxg_saveKeychainValue:deviceId key:@"Key_DeviceUUIDString"];
     }
     return deviceId;
 }

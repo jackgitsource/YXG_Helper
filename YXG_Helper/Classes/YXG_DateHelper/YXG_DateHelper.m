@@ -9,18 +9,18 @@
 
 @implementation YXG_DateHelper
 
-+ (UInt64)YXG_getCurrentMilliseTimestamp {
++ (UInt64)yxg_getCurrentMilliseTimestamp {
     return [[NSDate date] timeIntervalSince1970]*1000;// 精确到毫秒
 }
 
-+ (NSString *)YXG_CurrentDateString {
++ (NSString *)yxg_CurrentDateString {
     NSDate *date = [NSDate date];
     NSDateFormatter *dateformatter = [[NSDateFormatter alloc] init];
     [dateformatter setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
     return [dateformatter stringFromDate:date];
 }
 
-+ (NSString *)YXG_TimestampConversionToDateString:(UInt64)timestamp {
++ (NSString *)yxg_TimestampConversionToDateString:(UInt64)timestamp {
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:timestamp];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyy-MM-dd hh:mm:ss"];

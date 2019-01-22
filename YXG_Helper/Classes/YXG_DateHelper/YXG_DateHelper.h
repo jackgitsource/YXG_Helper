@@ -14,18 +14,18 @@ NS_ASSUME_NONNULL_BEGIN
  获取当前时间的毫秒级时间戳
  @return 时间戳
  */
-+ (UInt64)YXG_getCurrentMilliseTimestamp;
++ (UInt64)yxg_getCurrentMilliseTimestamp;
 /**
  获取当前时间 yyyy-MM-dd hh:mm:ss
  @return 时间字符串
  */
-+ (NSString *)YXG_CurrentDateString;
++ (NSString *)yxg_CurrentDateString;
 /**
  时间戳转换成字符串
  @param timestamp 时间戳
  @return 时间字符
  */
-+ (NSString *)YXG_TimestampConversionToDateString:(UInt64)timestamp;
++ (NSString *)yxg_TimestampConversionToDateString:(UInt64)timestamp;
 @end
 
 NS_ASSUME_NONNULL_END

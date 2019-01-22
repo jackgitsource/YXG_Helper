@@ -9,22 +9,22 @@
 #import "SVProgressHUD+yxghelper.h"
 
 @implementation SVProgressHUD (yxghelper)
-+ (void)YXG_ShowError:(NSString *)errorString {
++ (void)yxg_ShowError:(NSString *)errorString {
     [SVProgressHUD showErrorWithStatus:errorString];
     [SVProgressHUD dismissWithDelay:2];
 }
 
-+ (void)YXG_ShowSuccess:(NSString *)successString {
++ (void)yxg_ShowSuccess:(NSString *)successString {
     [SVProgressHUD showSuccessWithStatus:successString];
     [SVProgressHUD dismissWithDelay:2];
 }
 
-+ (void)YXG_DismissAndShowError:(NSString *)errorString {
++ (void)yxg_DismissAndShowError:(NSString *)errorString {
     [SVProgressHUD dismiss];
     [SVProgressHUD YXG_ShowError:errorString];
 }
 
-+ (void)YXG_DismissAndShowSuccess:(NSString *)successString {
++ (void)yxg_DismissAndShowSuccess:(NSString *)successString {
     [SVProgressHUD dismiss];
     [SVProgressHUD YXG_ShowSuccess:successString];
 }

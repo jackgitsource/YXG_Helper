@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (YXG_Helper)
-+ (UIViewController *)YXG_CurrentViewController;
++ (UIViewController *)yxg_CurrentViewController;
 @end
 
 NS_ASSUME_NONNULL_END
