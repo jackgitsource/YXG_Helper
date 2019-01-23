@@ -22,6 +22,7 @@
 		70AFE45921E70E39004B58ED /* NSObject+YXG_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE44E21E70E39004B58ED /* NSObject+YXG_Helper.m */; };
 		70AFE45A21E70E39004B58ED /* YXG_FileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE45321E70E39004B58ED /* YXG_FileTools.m */; };
 		70AFE45B21E70E39004B58ED /* YXG_KeyChainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE45521E70E39004B58ED /* YXG_KeyChainHelper.m */; };
+		70C064CE21F8375F00D831FC /* SVProgressHUD+YXG_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C064CD21F8375F00D831FC /* SVProgressHUD+YXG_Extensions.m */; };
 		70CABA1E21F5E6B6008A5F33 /* SVProgressHUD+yxghelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CABA1D21F5E6B6008A5F33 /* SVProgressHUD+yxghelper.m */; };
 		F623C9279DA9A1128357F7CE /* libPods-YXG_Helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FB47DDDB603957957DF3CD /* libPods-YXG_Helper.a */; };
 /* End PBXBuildFile section */
@@ -76,6 +77,8 @@
 		70AFE45321E70E39004B58ED /* YXG_FileTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXG_FileTools.m; sourceTree = "<group>"; };
 		70AFE45521E70E39004B58ED /* YXG_KeyChainHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXG_KeyChainHelper.m; sourceTree = "<group>"; };
 		70AFE45621E70E39004B58ED /* YXG_KeyChainHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXG_KeyChainHelper.h; sourceTree = "<group>"; };
+		70C064CC21F8375F00D831FC /* SVProgressHUD+YXG_Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+YXG_Extensions.h"; sourceTree = "<group>"; };
+		70C064CD21F8375F00D831FC /* SVProgressHUD+YXG_Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+YXG_Extensions.m"; sourceTree = "<group>"; };
 		70CABA1C21F5E6B6008A5F33 /* SVProgressHUD+yxghelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+yxghelper.h"; sourceTree = "<group>"; };
 		70CABA1D21F5E6B6008A5F33 /* SVProgressHUD+yxghelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+yxghelper.m"; sourceTree = "<group>"; };
 		7ED1C9A203BD61124BA20CCB /* Pods-YXG_Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXG_Helper.release.xcconfig"; path = "Target Support Files/Pods-YXG_Helper/Pods-YXG_Helper.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +210,8 @@
 				70AFE44E21E70E39004B58ED /* NSObject+YXG_Helper.m */,
 				70CABA1C21F5E6B6008A5F33 /* SVProgressHUD+yxghelper.h */,
 				70CABA1D21F5E6B6008A5F33 /* SVProgressHUD+yxghelper.m */,
+				70C064CC21F8375F00D831FC /* SVProgressHUD+YXG_Extensions.h */,
+				70C064CD21F8375F00D831FC /* SVProgressHUD+YXG_Extensions.m */,
 			);
 			path = YXG_Category;
 			sourceTree = "<group>";
@@ -439,6 +444,7 @@
 				700C077921E88DD3009B2F26 /* YXG_RequestHelper.m in Sources */,
 				70AFE45B21E70E39004B58ED /* YXG_KeyChainHelper.m in Sources */,
 				70AFE42521E70DD9004B58ED /* main.m in Sources */,
+				70C064CE21F8375F00D831FC /* SVProgressHUD+YXG_Extensions.m in Sources */,
 				70AFE45721E70E39004B58ED /* NSString+YXG_Universal.m in Sources */,
 				70AFE41721E70DD8004B58ED /* AppDelegate.m in Sources */,
 				706FAC9A21E72C5700B90272 /* YXG_DateHelper.m in Sources */,
