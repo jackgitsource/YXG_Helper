@@ -21,7 +21,7 @@
 }
 
 + (NSString *)yxg_TimestampConversionToDateString:(UInt64)timestamp {
-    NSDate *date = [NSDate dateWithTimeIntervalSince1970:timestamp];
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:timestamp/1000];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
     return [formatter stringFromDate:date];

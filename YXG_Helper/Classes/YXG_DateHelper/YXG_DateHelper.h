@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSString *)yxg_CurrentDateString;
 /**
- 时间戳转换成字符串
+ 毫秒 时间戳转换成字符串
  @param timestamp 时间戳
  @return 时间字符
  */
