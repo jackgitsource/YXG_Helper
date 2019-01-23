@@ -32,7 +32,7 @@
             }
         }
         if([responder isKindOfClass:[UIViewController class]]) {
-            return [NSObject YXG_TopViewController:((UIViewController *) responder)];
+            return [NSObject yxg_TopViewController:((UIViewController *) responder)];
         }
     }
     

@@ -24,6 +24,6 @@
         UITextField *textF = alertVC.textFields.firstObject;
         if (callback) callback(textF.text);
     }]];
-    [[self YXG_CurrentViewController] presentViewController:alertVC animated:YES completion:nil];
+    [[self yxg_CurrentViewController] presentViewController:alertVC animated:YES completion:nil];
 }
 @end

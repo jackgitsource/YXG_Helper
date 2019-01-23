@@ -21,11 +21,11 @@
 
 + (void)yxg_DismissAndShowError:(NSString *)errorString {
     [SVProgressHUD dismiss];
-    [SVProgressHUD YXG_ShowError:errorString];
+    [SVProgressHUD yxg_ShowError:errorString];
 }
 
 + (void)yxg_DismissAndShowSuccess:(NSString *)successString {
     [SVProgressHUD dismiss];
-    [SVProgressHUD YXG_ShowSuccess:successString];
+    [SVProgressHUD yxg_ShowSuccess:successString];
 }
 @end
