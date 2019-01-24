@@ -1,14 +1,14 @@
 //
-//  SVProgressHUD+yxghelper.m
+//  SVProgressHUD+YXG_Extensions.m
 //  YXG_Helper
 //
-//  Created by  on 2019/1/21.
+//  Created by  on 2019/1/23.
 //  Copyright © 2019 sun. All rights reserved.
 //
 
-#import "SVProgressHUD+yxghelper.h"
+#import "SVProgressHUD+YXG_Extensions.h"
 
-@implementation SVProgressHUD (yxghelper)
+@implementation SVProgressHUD (YXG_Extensions)
 + (void)yxg_ShowError:(NSString *)errorString {
     [SVProgressHUD showErrorWithStatus:errorString];
     [SVProgressHUD dismissWithDelay:2];
