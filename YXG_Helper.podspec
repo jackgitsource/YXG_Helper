@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
   spec.frameworks = 'UIKit'
 
   #  依赖库
-  #  spec.dependency 'SVProgressHUD'
+  spec.dependency 'SVProgressHUD'
   #  spec.dependency 'Masonry'
   #  spec.dependency 'AFNetworking'
   #  spec.dependency 'ReactiveObjC'

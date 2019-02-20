@@ -7,7 +7,7 @@
 
 #import "YXG_FileTools.h"
 #import "YXG_Macro.h"
-#import <SVProgressHUD.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 
 @implementation YXG_FileTools
 
