@@ -7,14 +7,14 @@
 
 #import "YXG_FileTools.h"
 #import "YXG_Macro.h"
-#import <SVProgressHUD.h>
+//#import <SVProgressHUD.h>
 
 @implementation YXG_FileTools
 
-+ (void)test {
-    [SVProgressHUD showWithStatus:nil];
-    [SVProgressHUD dismiss];
-}
+//+ (void)test {
+//    [SVProgressHUD showWithStatus:nil];
+//    [SVProgressHUD dismiss];
+//}
 
 + (NSString *)pathByDirectoryName:(NSString *)directoryName {
     NSString *basePath = [[self documentPath] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",directoryName]];
