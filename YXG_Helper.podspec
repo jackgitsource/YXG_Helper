@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "YXG_Helper"
-  spec.version      = "0.2.0"
+  spec.version      = "0.2.1"
   spec.summary      = "基础工具"
   spec.description  = <<-DESC
   经常使用到的基础工具抽象成库以方便管理
@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "8.0"
   spec.source       = { :git => "https://github.com/jackgitsource/YXG_Helper", :tag => spec.version.to_s }
 
-  spec.source_files  = 'YXG_Helper/Class/**/*'
+  spec.source_files  = 'YXG_HelperDemo/Classes/**/*'
 
   #  头文件
   #  spec.public_header_files = 'YXG_Helper/Classes/**/*.h'
