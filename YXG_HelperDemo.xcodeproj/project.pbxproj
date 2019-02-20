@@ -18,7 +18,6 @@
 		70EA9494221CF365000DE877 /* YXG_FileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EA9481221CF365000DE877 /* YXG_FileTools.m */; };
 		70EA9495221CF365000DE877 /* NSString+YXG_Universal.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EA9483221CF365000DE877 /* NSString+YXG_Universal.m */; };
 		70EA9496221CF365000DE877 /* UIAlertController+YXG_UniversalAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EA9485221CF365000DE877 /* UIAlertController+YXG_UniversalAlert.m */; };
-		70EA9497221CF365000DE877 /* SVProgressHUD+YXG_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EA9486221CF365000DE877 /* SVProgressHUD+YXG_Extensions.m */; };
 		70EA9498221CF365000DE877 /* NSObject+YXG_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EA9489221CF365000DE877 /* NSObject+YXG_Helper.m */; };
 		70EA9499221CF365000DE877 /* YXG_KeyChainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EA948C221CF365000DE877 /* YXG_KeyChainHelper.m */; };
 		70EA949A221CF365000DE877 /* YXG_DateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EA948F221CF365000DE877 /* YXG_DateHelper.m */; };
@@ -67,11 +66,9 @@
 		70EA9483221CF365000DE877 /* NSString+YXG_Universal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YXG_Universal.m"; sourceTree = "<group>"; };
 		70EA9484221CF365000DE877 /* NSObject+YXG_Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YXG_Helper.h"; sourceTree = "<group>"; };
 		70EA9485221CF365000DE877 /* UIAlertController+YXG_UniversalAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+YXG_UniversalAlert.m"; sourceTree = "<group>"; };
-		70EA9486221CF365000DE877 /* SVProgressHUD+YXG_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+YXG_Extensions.m"; sourceTree = "<group>"; };
 		70EA9487221CF365000DE877 /* NSString+YXG_Universal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YXG_Universal.h"; sourceTree = "<group>"; };
 		70EA9488221CF365000DE877 /* UIAlertController+YXG_UniversalAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+YXG_UniversalAlert.h"; sourceTree = "<group>"; };
 		70EA9489221CF365000DE877 /* NSObject+YXG_Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YXG_Helper.m"; sourceTree = "<group>"; };
-		70EA948A221CF365000DE877 /* SVProgressHUD+YXG_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+YXG_Extensions.h"; sourceTree = "<group>"; };
 		70EA948C221CF365000DE877 /* YXG_KeyChainHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXG_KeyChainHelper.m; sourceTree = "<group>"; };
 		70EA948D221CF365000DE877 /* YXG_KeyChainHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXG_KeyChainHelper.h; sourceTree = "<group>"; };
 		70EA948F221CF365000DE877 /* YXG_DateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXG_DateHelper.m; sourceTree = "<group>"; };
@@ -206,14 +203,12 @@
 		70EA9482221CF365000DE877 /* YXG_Category */ = {
 			isa = PBXGroup;
 			children = (
+				70EA9487221CF365000DE877 /* NSString+YXG_Universal.h */,
 				70EA9483221CF365000DE877 /* NSString+YXG_Universal.m */,
 				70EA9484221CF365000DE877 /* NSObject+YXG_Helper.h */,
-				70EA9485221CF365000DE877 /* UIAlertController+YXG_UniversalAlert.m */,
-				70EA9486221CF365000DE877 /* SVProgressHUD+YXG_Extensions.m */,
-				70EA9487221CF365000DE877 /* NSString+YXG_Universal.h */,
-				70EA9488221CF365000DE877 /* UIAlertController+YXG_UniversalAlert.h */,
 				70EA9489221CF365000DE877 /* NSObject+YXG_Helper.m */,
-				70EA948A221CF365000DE877 /* SVProgressHUD+YXG_Extensions.h */,
+				70EA9488221CF365000DE877 /* UIAlertController+YXG_UniversalAlert.h */,
+				70EA9485221CF365000DE877 /* UIAlertController+YXG_UniversalAlert.m */,
 			);
 			path = YXG_Category;
 			sourceTree = "<group>";
@@ -442,7 +437,6 @@
 				70EA9494221CF365000DE877 /* YXG_FileTools.m in Sources */,
 				70EA949A221CF365000DE877 /* YXG_DateHelper.m in Sources */,
 				7011CF7E21F9B71E00A56CF6 /* AppDelegate.m in Sources */,
-				70EA9497221CF365000DE877 /* SVProgressHUD+YXG_Extensions.m in Sources */,
 				70EA9495221CF365000DE877 /* NSString+YXG_Universal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
