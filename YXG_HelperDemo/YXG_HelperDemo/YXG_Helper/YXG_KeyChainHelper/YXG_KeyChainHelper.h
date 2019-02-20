@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define YXG_UUID [YXG_KeyChainHelper YXG_uuid]
+#define YXG_UUID [YXG_KeyChainHelper yxg_uuid]
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YXG_KeyChainHelper : NSObject

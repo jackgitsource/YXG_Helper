@@ -15,7 +15,7 @@
     [SVProgressHUD showWithStatus:nil];
     [SVProgressHUD dismiss];
 }
-    
+
 + (NSString *)pathByDirectoryName:(NSString *)directoryName {
     NSString *basePath = [[self documentPath] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",directoryName]];
     if ([self creatDirectory:basePath]) {
