@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "8.0"
   spec.source       = { :git => "https://github.com/jackgitsource/YXG_Helper", :tag => spec.version.to_s }
 
-  spec.source_files  = 'YXG_Helper/YXG_HelperDemo/Classes/**/*'
+  spec.source_files  = 'YXG_Helper/Class/**/*'
 
   #  头文件
   #  spec.public_header_files = 'YXG_Helper/Classes/**/*.h'
