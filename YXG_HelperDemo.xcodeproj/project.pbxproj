@@ -190,13 +190,13 @@
 			isa = PBXGroup;
 			children = (
 				70BEA956221E4479008641E8 /* Learn_lock.h */,
+				70BEA95B221E4479008641E8 /* Learn_lock.m */,
 				70BEA957221E4479008641E8 /* Learn_module.h */,
+				70BEA95A221E4479008641E8 /* Learn_module.m */,
+				70BEA95D221E4479008641E8 /* Learn_gcd.h */,
 				70BEA958221E4479008641E8 /* Learn_gcd.m */,
 				70BEA959221E4479008641E8 /* Learn_network.h */,
-				70BEA95A221E4479008641E8 /* Learn_module.m */,
-				70BEA95B221E4479008641E8 /* Learn_lock.m */,
 				70BEA95C221E4479008641E8 /* Learn_network.m */,
-				70BEA95D221E4479008641E8 /* Learn_gcd.h */,
 			);
 			path = Learn;
 			sourceTree = "<group>";
@@ -249,8 +249,8 @@
 		70EA948B221CF365000DE877 /* YXG_KeyChainHelper */ = {
 			isa = PBXGroup;
 			children = (
-				70EA948C221CF365000DE877 /* YXG_KeyChainHelper.m */,
 				70EA948D221CF365000DE877 /* YXG_KeyChainHelper.h */,
+				70EA948C221CF365000DE877 /* YXG_KeyChainHelper.m */,
 			);
 			path = YXG_KeyChainHelper;
 			sourceTree = "<group>";
@@ -258,8 +258,8 @@
 		70EA948E221CF365000DE877 /* YXG_DateHelper */ = {
 			isa = PBXGroup;
 			children = (
-				70EA948F221CF365000DE877 /* YXG_DateHelper.m */,
 				70EA9490221CF365000DE877 /* YXG_DateHelper.h */,
+				70EA948F221CF365000DE877 /* YXG_DateHelper.m */,
 			);
 			path = YXG_DateHelper;
 			sourceTree = "<group>";
@@ -267,8 +267,8 @@
 		70EA9491221CF365000DE877 /* YXG_RequestHelper */ = {
 			isa = PBXGroup;
 			children = (
-				70EA9492221CF365000DE877 /* YXG_RequestHelper.m */,
 				70EA9493221CF365000DE877 /* YXG_RequestHelper.h */,
+				70EA9492221CF365000DE877 /* YXG_RequestHelper.m */,
 			);
 			path = YXG_RequestHelper;
 			sourceTree = "<group>";

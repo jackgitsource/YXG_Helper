@@ -34,7 +34,13 @@
  APNS 是 apple push notification service 的简称 是远程推送功能的核心 通过apns客户端和苹果服务器建立一个长连接 推送就是通过这个长连接发送到客户端上
  devicetoken 是一个设备的标志符 每一个app在不同的设备上 devicetoken是不同的 通过注册远程推送服务 可以从apns获取你的devicetoken
  devicetoken不是唯一不变的 当你的手机更新系统后 就会发生变化
- 为保证安全性 apns
+ 为保证安全性 apns用连接信任和token信任 来控制通信入口
+ 
+ 换个角度介绍这个流程
+ 1.推送服务器 把devicetoken，要发送的消息发送给apns服务器
+ 2.apns服务器 在已注册的iphone列表中 依据deveictoken 查找到相应的设备 把消息发送到设备
+ 3.iphone把相应的消息发送给应用程序 弹出通知。
+ 
  
  */
 @end
