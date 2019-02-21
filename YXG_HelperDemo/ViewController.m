@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "YXG_HelperDemo-Swift.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    BasicTestViewController *basicVC = [[BasicTestViewController alloc] init];
+    [self.navigationController pushViewController:basicVC animated:YES];
 }
 
 

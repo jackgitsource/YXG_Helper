@@ -20,6 +20,8 @@
 		70BEA95F221E4479008641E8 /* Learn_module.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BEA95A221E4479008641E8 /* Learn_module.m */; };
 		70BEA960221E4479008641E8 /* Learn_lock.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BEA95B221E4479008641E8 /* Learn_lock.m */; };
 		70BEA961221E4479008641E8 /* Learn_network.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BEA95C221E4479008641E8 /* Learn_network.m */; };
+		70BEA9A3221E68F0008641E8 /* BasicTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BEA9A2221E68F0008641E8 /* BasicTestViewController.swift */; };
+		70BEA9A5221E6A70008641E8 /* Swift_Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BEA9A4221E6A70008641E8 /* Swift_Note.swift */; };
 		70EA9494221CF365000DE877 /* YXG_FileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EA9481221CF365000DE877 /* YXG_FileTools.m */; };
 		70EA9495221CF365000DE877 /* NSString+YXG_Universal.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EA9483221CF365000DE877 /* NSString+YXG_Universal.m */; };
 		70EA9496221CF365000DE877 /* UIAlertController+YXG_UniversalAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EA9485221CF365000DE877 /* UIAlertController+YXG_UniversalAlert.m */; };
@@ -75,6 +77,9 @@
 		70BEA95B221E4479008641E8 /* Learn_lock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Learn_lock.m; sourceTree = "<group>"; };
 		70BEA95C221E4479008641E8 /* Learn_network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Learn_network.m; sourceTree = "<group>"; };
 		70BEA95D221E4479008641E8 /* Learn_gcd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Learn_gcd.h; sourceTree = "<group>"; };
+		70BEA963221E55EB008641E8 /* YXG_HelperDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YXG_HelperDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		70BEA9A2221E68F0008641E8 /* BasicTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTestViewController.swift; sourceTree = "<group>"; };
+		70BEA9A4221E6A70008641E8 /* Swift_Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Note.swift; sourceTree = "<group>"; };
 		70EA947E221CF365000DE877 /* YXG_Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXG_Macro.h; sourceTree = "<group>"; };
 		70EA9480221CF365000DE877 /* YXG_FileTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXG_FileTools.h; sourceTree = "<group>"; };
 		70EA9481221CF365000DE877 /* YXG_FileTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXG_FileTools.m; sourceTree = "<group>"; };
@@ -153,6 +158,7 @@
 		7011CF7B21F9B71D00A56CF6 /* YXG_HelperDemo */ = {
 			isa = PBXGroup;
 			children = (
+				70BEA962221E55B6008641E8 /* Swift */,
 				70BEA955221E4479008641E8 /* Learn */,
 				70EA947C221CF365000DE877 /* Classes */,
 				7011CF7C21F9B71E00A56CF6 /* AppDelegate.h */,
@@ -199,6 +205,16 @@
 				70BEA95C221E4479008641E8 /* Learn_network.m */,
 			);
 			path = Learn;
+			sourceTree = "<group>";
+		};
+		70BEA962221E55B6008641E8 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				70BEA963221E55EB008641E8 /* YXG_HelperDemo-Bridging-Header.h */,
+				70BEA9A2221E68F0008641E8 /* BasicTestViewController.swift */,
+				70BEA9A4221E6A70008641E8 /* Swift_Note.swift */,
+			);
+			path = Swift;
 			sourceTree = "<group>";
 		};
 		70EA947C221CF365000DE877 /* Classes */ = {
@@ -351,6 +367,7 @@
 				TargetAttributes = {
 					7011CF7821F9B71D00A56CF6 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					7011CF9021F9B72200A56CF6 = {
 						CreatedOnToolsVersion = 10.1;
@@ -470,6 +487,8 @@
 				70BEA95E221E4479008641E8 /* Learn_gcd.m in Sources */,
 				70EA949B221CF365000DE877 /* YXG_RequestHelper.m in Sources */,
 				70EA9499221CF365000DE877 /* YXG_KeyChainHelper.m in Sources */,
+				70BEA9A5221E6A70008641E8 /* Swift_Note.swift in Sources */,
+				70BEA9A3221E68F0008641E8 /* BasicTestViewController.swift in Sources */,
 				70EA9494221CF365000DE877 /* YXG_FileTools.m in Sources */,
 				70EA949A221CF365000DE877 /* YXG_DateHelper.m in Sources */,
 				7011CF7E21F9B71E00A56CF6 /* AppDelegate.m in Sources */,
@@ -647,8 +666,11 @@
 			baseConfigurationReference = 8EE5E8D296734149C5D2722F /* Pods-YXG_HelperDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 88YDHUX8PT;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = YXG_HelperDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -656,6 +678,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.everfine.YXG-HelperDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YXG_HelperDemo/Swift/YXG_HelperDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -665,8 +690,11 @@
 			baseConfigurationReference = 3E4EA29C64B1729CE0E4A1C8 /* Pods-YXG_HelperDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 88YDHUX8PT;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = YXG_HelperDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -674,6 +702,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.everfine.YXG-HelperDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YXG_HelperDemo/Swift/YXG_HelperDemo-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -681,6 +711,7 @@
 		7011CFA921F9B72200A56CF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 88YDHUX8PT;
@@ -700,6 +731,7 @@
 		7011CFAA21F9B72200A56CF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 88YDHUX8PT;
@@ -719,6 +751,7 @@
 		7011CFAC21F9B72200A56CF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 88YDHUX8PT;
 				INFOPLIST_FILE = YXG_HelperDemoUITests/Info.plist;
@@ -737,6 +770,7 @@
 		7011CFAD21F9B72200A56CF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 88YDHUX8PT;
 				INFOPLIST_FILE = YXG_HelperDemoUITests/Info.plist;
