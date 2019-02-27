@@ -16,6 +16,8 @@
  然后 要进入详情页吧 假如能进入十个页面 是不是又要import十个ViewController 。耦合诞生
  长此以往 耦合相当严重 错综复杂
  为了解决类似的问题 组件化思想诞生
+ 
+ 下面说的 模块 和 组件 是一个意思
  */
 
 /**
@@ -25,14 +27,47 @@
  
  一般需要根据产品 来对项目划分不同的层次 譬如
  
+ 
+ 
  业务层A 业务层B 业务层C 业务层D
  中间层
  通用业务层
  可以脱离APP的底层
  
+ 
+ 
+ 
  可以脱离APP的底层 譬如YXG_helper 网络请求的封装等
  通用业务层 顾名思义就是可以提供给业务ABCD使用的业务类代码
  中间层 则起到协调以及解耦和的作用 协调组件之间的通讯 解除组件之间的耦合 中间层就是组件化方案的落脚点。
+ 
+ 
+ 要思考的问题有1.中间层怎么去转发组件之间的调用 2.一个模块和中间层进行通信 怎么知道另一个模块提供了什么接口 3.模块和中间层之间相互依赖 怎么破除这个依赖？
+ 思路：runtime的反射调用 这样可以做到中间层对模块的0依赖 看下面例子
+ + (UIViewController *)BookDetailComponent_viewController:(NSString *)bookId {
+ Class cls = NSClassFromString(@"BookDetailComponent");
+ return [cls performSelector:NSSelectorFromString(@"detailViewController:") withObject:@{@"bookId":bookId}];
+ }
+ + (UIViewController *)ReviewComponent_viewController:(NSString *)bookId type:(NSInteger)type {
+ Class cls = NSClassFromString(@"ReviewComponent");
+ return [cls performSelector:NSSelectorFromString(@"reviewViewController:") withObject:@{@"bookId":bookId, @"type": @(type)}];
+ }
+ 拓展一下：既然使用runtime可以摆脱依赖 直接在每个组件类里面使用runtime不就好了 还要个组件干什么？答案是由于各个方法的参数啊类型啊等等都不一样，要传dictionary，key value不明确 很不好管理。调用起来很费劲。使用中间层 加一个dictionary参数即可 便于管理。
+ 
+ 至此 +++++++++++++++实现了中间件对组件的0依赖，各组件之间0依赖 。而各组件只需要依赖中间件即可 只需要导入一次中间件。++++++++++++++++++++
+ 
+
+ 
+ 基本的框架搭建完成 但是这不是架构 只是架构的一小部分。MVVM等设计模式 也只是架构的一小部分而已。
+ 
+ 下面就是要仔细研究中间层的编写 寻求一种最好的方案。
+ 优化1. runtime方法可以抽取出来
+ 优化2. 每个组件都需要在中间件里面写一遍，这样中间件就变得很长；优化采用casa的方案：第一是Target-action target就是class action就是selector,第二是category,每个组件写一个中间件的category，这样就不至于很长。
+ 
+ 
+ 
+ 
+ 
  */
 
 /**

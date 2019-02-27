@@ -67,6 +67,8 @@
 		7011CF9C21F9B72200A56CF6 /* YXG_HelperDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YXG_HelperDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7011CFA021F9B72200A56CF6 /* YXG_HelperDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXG_HelperDemoUITests.m; sourceTree = "<group>"; };
 		7011CFA221F9B72200A56CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7017E28A2225213500493717 /* Blog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Blog.h; sourceTree = "<group>"; };
+		7017E28B22252BA300493717 /* RunTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTime.h; sourceTree = "<group>"; };
 		70BEA952221E4469008641E8 /* UINavigationController+yxgExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+yxgExtension.h"; sourceTree = "<group>"; };
 		70BEA953221E446A008641E8 /* UINavigationController+yxgExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+yxgExtension.m"; sourceTree = "<group>"; };
 		70BEA956221E4479008641E8 /* Learn_lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Learn_lock.h; sourceTree = "<group>"; };
@@ -203,6 +205,8 @@
 				70BEA958221E4479008641E8 /* Learn_gcd.m */,
 				70BEA959221E4479008641E8 /* Learn_network.h */,
 				70BEA95C221E4479008641E8 /* Learn_network.m */,
+				7017E28A2225213500493717 /* Blog.h */,
+				7017E28B22252BA300493717 /* RunTime.h */,
 			);
 			path = Learn;
 			sourceTree = "<group>";
