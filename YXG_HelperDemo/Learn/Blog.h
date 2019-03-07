@@ -28,8 +28,11 @@
  
  记录一款绘制流程图的软件 忆图
  
+ 网络编程
+ https://www.cnblogs.com/imstudy/p/9244476.html
  
- apple 沈审核条条框框 https://developer.apple.com/cn/app-store/review/guidelines/#privacy
+ 
+ apple 审核条条框框 https://developer.apple.com/cn/app-store/review/guidelines/#privacy
  
  
  */

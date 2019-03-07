@@ -51,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		3E4EA29C64B1729CE0E4A1C8 /* Pods-YXG_HelperDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXG_HelperDemo.release.xcconfig"; path = "Target Support Files/Pods-YXG_HelperDemo/Pods-YXG_HelperDemo.release.xcconfig"; sourceTree = "<group>"; };
+		701000072230AFA60008F39A /* Thread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Thread.h; sourceTree = "<group>"; };
+		701000082230B1560008F39A /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
 		7011CF7921F9B71D00A56CF6 /* YXG_HelperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YXG_HelperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7011CF7C21F9B71E00A56CF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7011CF7D21F9B71E00A56CF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -207,6 +209,8 @@
 				70BEA95C221E4479008641E8 /* Learn_network.m */,
 				7017E28A2225213500493717 /* Blog.h */,
 				7017E28B22252BA300493717 /* RunTime.h */,
+				701000072230AFA60008F39A /* Thread.h */,
+				701000082230B1560008F39A /* Net.h */,
 			);
 			path = Learn;
 			sourceTree = "<group>";
