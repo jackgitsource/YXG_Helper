@@ -14,25 +14,33 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - CocoaAsyncSocket (7.6.3)
   - Masonry (1.1.0)
+  - ReactiveObjC (3.0.0)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - AFNetworking
+  - CocoaAsyncSocket
   - Masonry
+  - ReactiveObjC (~> 3.0.0)
   - SVProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - CocoaAsyncSocket
     - Masonry
+    - ReactiveObjC
     - SVProgressHUD
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 210e27f7438bfd9cb479e13a236d837910b8fb0f
+PODFILE CHECKSUM: 41c6dd88da8c06936ad262637c8083f80da3723e
 
-COCOAPODS: 1.6.0.beta.2
+COCOAPODS: 1.6.0

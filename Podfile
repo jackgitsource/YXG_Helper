@@ -6,5 +6,7 @@ target 'YXG_HelperDemo' do
     pod 'AFNetworking'
     pod 'SVProgressHUD'
     pod 'Masonry'
+    pod 'ReactiveObjC', '~> 3.0.0'
+    pod 'CocoaAsyncSocket'
 end
 

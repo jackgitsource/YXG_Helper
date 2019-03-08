@@ -31,6 +31,10 @@
  网络编程
  https://www.cnblogs.com/imstudy/p/9244476.html
  
+ RAC 纯OC版本的建议下载这个 pod 'ReactiveObjC', '~> 3.0.0'
+ 这篇很清晰 https://www.cnblogs.com/lurenq/p/8469076.html
+ 
+ 
  
  apple 审核条条框框 https://developer.apple.com/cn/app-store/review/guidelines/#privacy
  
